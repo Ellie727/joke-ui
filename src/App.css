@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+  width: 1080px; 
+ margin: 10px auto; 
+}
+
+
+.container{
+  display: flex; 
+  justify-content: space-evenly;
+}
+
+.jokeButton {
+    text-transform: uppercase;
+    background: #3498db;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #3498db;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; 
+}
+
+.punchlineButton{
+  text-transform: uppercase;
+  background: #ff0000;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ff0000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; 
+
+}
+
+.joke{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; 
+  font-size: 20px;  
+}
+
+@keyframes bounce { 
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-30px); }
+  40% { transform: translateY(0); }
+  60% { transform: translateY(-20px); }
+  80% { transform: translateY(0); }
+  90% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+
+}
+
+.punchline{
+  color:#00ab66;
+  font-weight: bold; 
+  font-size: 30px;
+  font-family: 'Nerko One', cursive;
+  animation: bounce 1.2s;
+  animation-direction: alternate;
+ 
+}
+
+
+.errrorMessage{
+  color: red;
+}
+
+
+/*small screen styling*/
+@media only screen and (max-width: 600px){
+  .App {
+    text-align: center;
+    width:450px; 
+    margin: 10px auto; 
+    padding: 0, 20px;
+  }
+
+  .loading{
+    margin-top: 5px;
+  }
+
+}
